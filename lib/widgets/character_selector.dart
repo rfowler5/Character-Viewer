@@ -1,10 +1,10 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 import '../models/character.dart';
 
-class CharacterDescriptions extends StatelessWidget {
-  const CharacterDescriptions(
-      {required this.characters, this.onTap, super.key});
+class CharacterSelector extends StatelessWidget {
+  const CharacterSelector({required this.characters, this.onTap, super.key});
 
   final List<Character> characters;
   final void Function(int)? onTap;
@@ -18,9 +18,10 @@ class CharacterDescriptions extends StatelessWidget {
       itemBuilder: (context, index) => ListTile(
         // Tap to navigate or to change character being viewed at the moment.
         onTap: () => onTap!(index),
-        title: Text(
+        title: AutoSizeText(
           characters[index].name,
-          style: const TextStyle(fontWeight: FontWeight.bold),
+          maxLines: 1,
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         ),
         tileColor: Colors.white, //Colors.grey[400],
       ),
