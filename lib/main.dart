@@ -8,7 +8,10 @@ import 'services/character_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   final characters = await CharacterService().getCharacterData();
+
+  // Must set these cause Android does not have all of them by default
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,

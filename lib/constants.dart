@@ -1,4 +1,7 @@
-// Might make these .env variables and use dotenv library package.
+// Might make some of these .env variables and use dotenv library package.
+
+const baseApiURL =
+    'http://api.duckduckgo.com/?q=simpsons+characters&format=json';
 
 const baseURL = 'https://duckduckgo.com';
 

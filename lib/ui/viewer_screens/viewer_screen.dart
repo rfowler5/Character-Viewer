@@ -6,8 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import 'character_image_screen.dart';
-import '../models/character.dart';
-import '../providers.dart';
+import '../../models/character.dart';
+import '../../providers.dart';
 import '../widgets/character_card.dart';
 import '../widgets/character_selector.dart';
 

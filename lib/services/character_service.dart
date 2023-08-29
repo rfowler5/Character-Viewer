@@ -2,11 +2,11 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 
+import '../constants.dart';
 import '../models/character.dart';
 
 class CharacterService {
-  final dio = Dio(BaseOptions(
-      baseUrl: 'http://api.duckduckgo.com/?q=simpsons+characters&format=json'));
+  final dio = Dio(BaseOptions(baseUrl: baseApiURL));
 
   Future<List<Character>> getCharacterData() async {
     return await dio.get('').then((Response response) =>
