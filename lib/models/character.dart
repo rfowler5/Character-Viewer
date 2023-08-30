@@ -12,8 +12,9 @@ class Character {
     final textArray = (map['Text'] as String).split(' - ');
     final iconURL = map['Icon']['URL'];
 
-    name = textArray[0];
-    description = textArray[1];
+    name = textArray.isNotEmpty ? textArray[0] : '';
+
+    description = textArray.length == 2 ? textArray[1] : '';
     image = '$baseImageURL${iconURL != '' ? iconURL : defaultImageURL}';
   }
 }
