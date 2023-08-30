@@ -1,4 +1,4 @@
-package com.example.character_viewer
+package com.exampleCompany.characterViewer
 
 import io.flutter.embedding.android.FlutterActivity
 

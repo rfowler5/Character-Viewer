@@ -1,5 +1,5 @@
 name: character_viewer
-description: A new Flutter project.
+description: Select characters from TV shows and view them.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -76,10 +76,10 @@ flavorizr:
         name: "Simpson Viewer"
 
       android:
-        applicationId: "com.viewer.simpson" 
+        applicationId: "com.exampleCompany.simpsonViewer" 
         icon: "assets/1024px-Simpsons_tv_icon.png" 
       ios:
-        bundleId: "com.viewer.simpson"
+        bundleId: "com.exampleCompany.simpsonViewer"
         icon: "assets/1024px-Simpsons_tv_icon.png"
     
     wire:
@@ -87,10 +87,10 @@ flavorizr:
         name: "The Wire Viewer"
     
       android:
-        applicationId: "com.viewer.wire"
+        applicationId: "com.exampleCompany.wireViewer"
         icon: "assets/the_wire.png" 
       ios:
-        bundleId: "com.viewer.wire"
+        bundleId: "com.exampleCompany.wireViewer"
         icon: "assets/the_wire.png" 
 
 # The following section is specific to Flutter packages.
