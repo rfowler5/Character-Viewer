@@ -1,4 +1,4 @@
-import '../constants.dart';
+import '../configs/api_configs.dart' show baseImageURL, defaultImageURL;
 
 class Character {
   Character(
@@ -10,10 +10,10 @@ class Character {
 
   Character.fromMap(Map<String, dynamic> map) {
     final textArray = (map['Text'] as String).split(' - ');
-    final iconUri = map['Icon']['URL'];
+    final iconURL = map['Icon']['URL'];
 
     name = textArray[0];
     description = textArray[1];
-    image = '$baseURL${iconUri != '' ? iconUri : defaultImageURL}';
+    image = '$baseImageURL${iconURL != '' ? iconURL : defaultImageURL}';
   }
 }

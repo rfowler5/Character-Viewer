@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 
 import '../../models/character.dart';
 
-class CharacterSelector extends StatelessWidget {
-  const CharacterSelector({required this.characters, this.onTap, super.key});
+class CharacterSelectorList extends StatelessWidget {
+  const CharacterSelectorList(
+      {required this.characters, this.onTap, super.key});
 
   final List<Character> characters;
   final void Function(int)? onTap;

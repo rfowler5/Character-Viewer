@@ -3,15 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'app.dart';
-import 'providers.dart';
-import 'services/character_service.dart';
+import 'state/characters_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  final characters = await CharacterService().getCharacterData();
-
-  // Must set these cause Android does not have all of them by default
+  // Must set these cause Android (and maybe ios also?) does not have all of them by default
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
@@ -19,11 +16,12 @@ void main() async {
     DeviceOrientation.landscapeRight
   ]);
 
+  final container = ProviderContainer();
+  await container.read(charactersProvider.future);
+
   runApp(
-    ProviderScope(
-      overrides: [
-        charactersProvider.overrideWith((ref) => characters),
-      ],
+    UncontrolledProviderScope(
+      container: container,
       child: const MyApp(),
     ),
   );

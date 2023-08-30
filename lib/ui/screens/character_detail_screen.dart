@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../models/character.dart';
 import '../widgets/character_card.dart';
 
-class CharacterImageScreen extends StatelessWidget {
-  const CharacterImageScreen({required this.character, super.key});
+class CharacterDetailScreen extends StatelessWidget {
+  const CharacterDetailScreen({required this.character, super.key});
   final Character character;
 
   @override

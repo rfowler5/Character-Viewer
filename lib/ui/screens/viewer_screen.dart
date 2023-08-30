@@ -5,11 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import 'character_image_screen.dart';
 import '../../models/character.dart';
-import '../../providers.dart';
+import '../../state/characters_provider.dart';
 import '../widgets/character_card.dart';
-import '../widgets/character_selector.dart';
+import '../widgets/character_list.dart';
 
 class ViewerScreen extends ConsumerStatefulWidget {
   const ViewerScreen({super.key});
@@ -52,13 +51,13 @@ class _ViewerScreenState extends ConsumerState<ViewerScreen> {
 
     final List<Widget> children = [
       Expanded(
-        child: CharacterSelector(
+        child: CharacterSelectorList(
             characters: filteredCharacters,
             onTap: (index) => isTablet
                 ? setState(() {
                     selectedCharacterIndex = index;
                   })
-                : context.push('/image-screen',
+                : context.push('/detail-screen',
                     extra: filteredCharacters[index])),
       ),
     ];

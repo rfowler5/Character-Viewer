@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
-import '../models/character.dart';
+import '../../models/character.dart';
 
 class CharacterCard extends StatelessWidget {
   const CharacterCard({required this.character, super.key});
