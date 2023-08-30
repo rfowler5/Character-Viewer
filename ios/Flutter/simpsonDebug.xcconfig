@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_simpson.dart
+ASSET_PREFIX=simpson
+BUNDLE_NAME=Simpson Viewer
+BUNDLE_DISPLAY_NAME=Simpson Viewer

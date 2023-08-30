@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'app.dart';
 import 'state/characters_provider.dart';
 
-void main() async {
+void mainCommon() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Must set these cause Android (and maybe ios also?) does not have all of them by default

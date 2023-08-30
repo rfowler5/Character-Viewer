@@ -1,0 +1,23 @@
+flavorizr:
+  ide: "vscode"
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+  flavors:
+    simpson:
+      app:
+        name: "Simpson Viewer"
+
+      android:
+        applicationId: "com.viewer.simpson"  
+      ios:
+        bundleId: "com.viewer.simpson"
+    
+    wire:
+      app:
+        name: "The Wire Viewer"
+    
+      android:
+        applicationId: "com.viewer.wire"
+      ios:
+        bundleId: "com.viewer.wire"
