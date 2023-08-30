@@ -11,7 +11,7 @@ class F {
   static String get title {
     switch (appFlavor) {
       case Flavor.simpson:
-        return 'Simpson Viewer';
+        return 'Simpsons Character Viewer';
       case Flavor.wire:
         return 'The Wire Viewer';
       default:
@@ -19,4 +19,14 @@ class F {
     }
   }
 
+  static String get baseURL {
+    switch (appFlavor) {
+      case Flavor.simpson:
+        return 'http://api.duckduckgo.com/?q=simpsons+characters&format=json';
+      case Flavor.wire:
+        return 'http://api.duckduckgo.com/?q=the+wire+characters&format=json';
+      default:
+        return 'title';
+    }
+  }
 }

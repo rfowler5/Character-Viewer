@@ -73,24 +73,24 @@ flavorizr:
   flavors:
     simpson:
       app:
-        name: "Simpson Viewer"
+        name: "Simpsons Character Viewer"
 
       android:
-        applicationId: "com.exampleCompany.simpsonViewer" 
+        applicationId: "com.sample.simpsonsviewer" 
         icon: "assets/1024px-Simpsons_tv_icon.png" 
       ios:
-        bundleId: "com.exampleCompany.simpsonViewer"
+        bundleId: "com.sample.simpsonsviewer"
         icon: "assets/1024px-Simpsons_tv_icon.png"
     
     wire:
       app:
-        name: "The Wire Viewer"
+        name: "The Wire Character Viewer"
     
       android:
-        applicationId: "com.exampleCompany.wireViewer"
+        applicationId: "com.sample.wireviewer"
         icon: "assets/the_wire.png" 
       ios:
-        bundleId: "com.exampleCompany.wireViewer"
+        bundleId: "com.sample.wireviewer"
         icon: "assets/the_wire.png" 
 
 # The following section is specific to Flutter packages.
