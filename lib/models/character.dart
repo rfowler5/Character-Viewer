@@ -9,12 +9,18 @@ class Character {
   late final String description;
 
   Character.fromMap(Map<String, dynamic> map) {
-    final textArray = (map['Text'] as String).split(' - ');
     final iconURL = map['Icon']['URL'];
 
-    name = textArray.isNotEmpty ? textArray[0] : '';
+    final resultString = map['Result'] as String;
 
-    description = textArray.length == 2 ? textArray[1] : '';
+    name = _extractMatchGroup(r'<a[^>]*>(.*)</a>', resultString);
+
+    description = _extractMatchGroup(r'<br[^>]*>(.*)$', resultString);
+
     image = '$baseImageURL${iconURL != '' ? iconURL : defaultImageURL}';
   }
+
+  /// Helper to extract text in a single regExp match group.
+  String _extractMatchGroup(String regExpStr, String searchStr) =>
+      RegExp(regExpStr, dotAll: true).firstMatch(searchStr)?.group(1) ?? '';
 }

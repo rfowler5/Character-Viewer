@@ -1,6 +1,8 @@
 // Might make some of these .env variables and use dotenv library package.
 
-const baseURL = 'http://api.duckduckgo.com/?q=simpsons+characters&format=json';
+// Using baseURL in flavors.dart file now. Don't like this: would rather have separate config files
+// and load them into the flavors.dart file. But will leave things be for now.
+//const baseURL = 'http://api.duckduckgo.com/?q=simpsons+characters&format=json';
 
 const baseImageURL = 'https://duckduckgo.com';
 

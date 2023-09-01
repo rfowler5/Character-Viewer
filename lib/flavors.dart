@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 enum Flavor {
   simpson,
   wire,
@@ -27,6 +29,17 @@ class F {
         return 'http://api.duckduckgo.com/?q=the+wire+characters&format=json';
       default:
         return 'title';
+    }
+  }
+
+  static ThemeData get themeData {
+    switch (appFlavor) {
+      case Flavor.simpson:
+        return ThemeData(primarySwatch: Colors.amber);
+      case Flavor.wire:
+        return ThemeData(primarySwatch: Colors.red);
+      default:
+        return ThemeData(primarySwatch: Colors.blue);
     }
   }
 }

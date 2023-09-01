@@ -1,6 +1,8 @@
 import 'package:character_viewer/routes/routes.dart';
 import 'package:flutter/material.dart';
 
+import 'flavors.dart';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -8,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: F.themeData,
       routerConfig: router(),
     );
   }

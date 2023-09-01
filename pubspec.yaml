@@ -80,7 +80,7 @@ flavorizr:
         icon: "assets/1024px-Simpsons_tv_icon.png" 
       ios:
         bundleId: "com.sample.simpsonsviewer"
-        icon: "assets/1024px-Simpsons_tv_icon.png"
+        icon: "assets/simpsons_opaque.png"
     
     wire:
       app:
@@ -91,7 +91,7 @@ flavorizr:
         icon: "assets/the_wire.png" 
       ios:
         bundleId: "com.sample.wireviewer"
-        icon: "assets/the_wire.png" 
+        icon: "assets/the_wire_opaque.png" 
 
 # The following section is specific to Flutter packages.
 flutter:
@@ -102,7 +102,9 @@ flutter:
   uses-material-design: true
   assets:
     - assets/1024px-Simpsons_tv_icon.png
+    - assets/simpsons_opaque.png
     - assets/the_wire.png
+    - assets/the_wire_opaque.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
