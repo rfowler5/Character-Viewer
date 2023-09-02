@@ -40,7 +40,7 @@ dependencies:
   easy_search_bar: ^2.5.0
   auto_size_text: ^3.0.0
   go_router: ^10.1.1
-  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.2.19
   
 
 dev_dependencies:
@@ -58,11 +58,6 @@ dev_dependencies:
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
-flutter_launcher_icons:
-  android: 'launcher_icon'
-  ios: 'launcher_icon'
-  image_path: "assets/1024px-Simpsons_tv_icon.png"
-
 
 
 flavorizr:
@@ -76,9 +71,11 @@ flavorizr:
         name: "Simpsons Character Viewer"
 
       android:
+        generateDummyAssets: false
         applicationId: "com.sample.simpsonsviewer" 
-        icon: "assets/1024px-Simpsons_tv_icon.png" 
+        icon: "assets/simpsons_opaque.png" 
       ios:
+        generateDummyAssets: false
         bundleId: "com.sample.simpsonsviewer"
         icon: "assets/simpsons_opaque.png"
     
@@ -87,9 +84,11 @@ flavorizr:
         name: "The Wire Character Viewer"
     
       android:
+        generateDummyAssets: false
         applicationId: "com.sample.wireviewer"
-        icon: "assets/the_wire.png" 
+        icon: "assets/the_wire_opaque.png" 
       ios:
+        generateDummyAssets: false
         bundleId: "com.sample.wireviewer"
         icon: "assets/the_wire_opaque.png" 
 
