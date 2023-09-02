@@ -1,5 +1,7 @@
 flutter_native_splash:
   color: "#ffffff"
   image: assets/simpsons_opaque.png
+  ios: false
+  web: false
   # android_12:
   #   image: assets/simpsons_opaque.png
