@@ -6,18 +6,26 @@ flavorizr:
   flavors:
     simpson:
       app:
-        name: "Simpson Viewer"
+        name: "Simpsons Character Viewer"
 
       android:
-        applicationId: "com.viewer.simpson"  
+        generateDummyAssets: false
+        applicationId: "com.sample.simpsonsviewer" 
+        icon: "assets/simpsons_opaque.png" 
       ios:
-        bundleId: "com.viewer.simpson"
+        generateDummyAssets: false
+        bundleId: "com.sample.simpsonsviewer"
+        icon: "assets/simpsons_opaque.png"
     
     wire:
       app:
-        name: "The Wire Viewer"
+        name: "The Wire Character Viewer"
     
       android:
-        applicationId: "com.viewer.wire"
+        generateDummyAssets: false
+        applicationId: "com.sample.wireviewer"
+        icon: "assets/the_wire_opaque.png" 
       ios:
-        bundleId: "com.viewer.wire"
+        generateDummyAssets: false
+        bundleId: "com.sample.wireviewer"
+        icon: "assets/the_wire_opaque.png" 
